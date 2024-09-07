@@ -1,0 +1,8 @@
+<h1>Tomotter</h1>
+<h3>投稿編集</h3>
+<%= form_for @tweet do |f| %>
+    <%= f.label :body %>
+    <%= f.text_field :body,:size => 140 %>
+    <%= f.submit "編集する" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", tweets_path %>
